@@ -5,7 +5,6 @@ import urllib.request
 from datetime import datetime
 
 PLUGINS = [
-    ("navigatorAlex", "themes.js",              "https://arst113.github.io/log/themes.js"),
     ("navigatorAlex", "NewPhoneMenu.js",        "https://arst113.github.io/log/NewPhoneMenu.js"),
     ("navigatorAlex", "NewMenu.js",             "https://arst113.github.io/log/NewMenu.js"),
     ("apxubatop",     "tvbutton.js",            "https://apxubatop.github.io/lmpPlugs/tvbutton.js"),
