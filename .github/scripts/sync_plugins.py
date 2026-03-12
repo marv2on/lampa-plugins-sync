@@ -64,7 +64,7 @@ PLUGINS = [
     ("Yaroslav",      "interfaceymod.js",       "http://lampalampa.free.nf/interfaceymod.js"),
 ]
 
-PLUGINS_DIR = "plugins"
+PLUGINS_DIR = "sync"
 TIMEOUT = 15
 
 def md5(content):
