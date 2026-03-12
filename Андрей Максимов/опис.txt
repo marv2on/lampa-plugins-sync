@@ -1,0 +1,2 @@
+theme.js — плагін тем оформлення для Lampa з 8 варіантами: Neon (синьо-фіолетовий), Aurora (смарагдовий), Gold (золотий), Mono (мінімалістичний), Sunset (помаранчево-рожевий), Glass (glassmorphism), Apple TV та Custom (власні кольори). Кожна тема перефарбовує фон, шапку, сайдбар, картки та кнопки через динамічно згенерований CSS з класом на <body>. https://llowmikee.github.io/Alcopac_theme/theme.js Ґ
+Фікс від https://t.me/ManiacWithAxe

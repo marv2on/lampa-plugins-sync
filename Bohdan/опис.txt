@@ -1,0 +1,2 @@
+1) keywords.js
+Плагін для пошуку по тегах (ключових словах), які користувачі додають на tmdb. Зробив переклад цих тегів українською. (https://bodya-elven.github.io/different/keywords.js)

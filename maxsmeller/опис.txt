@@ -1,0 +1,19 @@
+ratings.js — показує рейтинги фільмів прямо в Lampa: КіноПошук (через kinopoiskapiunofficial.tech), IMDb, Rotten Tomatoes, Metacritic (через OMDB API), а також нагороди (Оскар, Еммі) та наявність якості через Jacred. Потребує власних API-ключів.
+themes.js — плагін тем оформлення для Lampa з підтримкою 9 мов. Дозволяє змінювати тему інтерфейсу та вмикати/вимикати анімації через Settings.
+
+maxsm_ratings_mod.js
+Добавляет качество с рейтингами :)
+Для получения данных с кинопоиск используется https://kinopoiskapiunofficial.tech/ - получите API ключ
+Для получения данных Metacritic, Tomatoes, наград испольузется https://www.omdbapi.com/ - получите API ключ
+ Можно использовать одиночный ключ или массив ключей, после получения API ключей передайте их как массивы через:
+    window.RATINGS_PLUGIN_TOKENS && window.RATINGS_PLUGIN_TOKENS.OMDB_API_KEYS
+Или просто введите ниже в коде плагина:
+    var OMDB_API_KEYS = (window.RATINGS_PLUGIN_TOKENS && window.RATINGS_PLUGIN_TOKENS.OMDB_API_KEYS) || ['YOU_KEY']; // api ключи массивом
+    var KP_API_KEYS   = (window.RATINGS_PLUGIN_TOKENS && window.RATINGS_PLUGIN_TOKENS.KP_API_KEYS)   || ['YOU_KEY']; // api ключи массивом
+ Для получения данных о качестве используется jacred парсер, по умолчанию плагин настроен на получение адреса и ключа вашего введеного jacred,
+вы можете изменить это в переменных:
+    var JACRED_PROTOCOL = 'https://'; // Протокол JacRed
+    var JACRED_URL = Lampa.Storage.get('jackett_url'); // Адрес JacRed для получения информации о карточках без протокола (jacred.xyz)
+    var JACRED_API_KEY = Lampa.Storage.get('jackett_key'); // api ключ JacRed
+
+themes-max.js (v2.6.1) — плагін для Lampa, який додає 6 кольорових тем оформлення інтерфейсу: mint_dark, crystal_cyan, deep_aurora, violet_blue, amber_noir, velvet_sakura. Кожна тема змінює кольори фону, акцентів та елементів фокусу через CSS. Налаштовується через окремий розділ Settings у Lampa.

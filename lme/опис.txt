@@ -1,0 +1,6 @@
+Nightingale.js Відображення наявності перекладу в Онлайн джерелах. (https://lampame.github.io/main/n.js)
+pubtorr.js Список парсеров новий вид (https://lampame.github.io/main/pubtorr.js)
+hikka.js Аніме-каталог Hikka з фільтрами, франшизами, персонажами й карткою. (https://lampame.github.io/main/hikka.js) скрипт залежний от оригіналу
+torrentmanager.js Керування торент-клієнтом у Lampa: статуси, дії, метадані. (https://lampame.github.io/main/torrentmanager.js)
+
+tsTracksProbe.js Детальна інформація про аудіо/субтитри та зручний вибір доріжок від TorrServer. (https://lampame.github.io/main/tstracks.js)

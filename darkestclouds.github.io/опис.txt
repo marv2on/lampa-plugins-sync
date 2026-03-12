@@ -1,0 +1,7 @@
+applecation.min.js (v1.2.1) — великий плагін, який повністю переробляє сторінку деталей фільму/серіалу в Lampa, перетворюючи її на більш інформативний та красивий екран.
+Що відображає:
+Логотип студії/мережі (завантажує з TMDB images API)
+Рейтинги — KinoPoisk, IMDb, TMDB, Rotten Tomatoes, Metacritic, Popcorn (через MDBList + KP Unofficial API)
+Метадані — рік, тривалість, кількість сезонів/серій з локалізованими відмінюваннями (uk/ru/en)
+Якість — автоматичні бейджі 4K / 2K / Full HD / HD / HDR / Dolby Vision / 7.1 / Dub, що визначаються через аналіз ffprobe-даних з торрентів
+Опис — з overlay-панеллю (бюджет, країни, повний текст) (https://darkestclouds.github.io/plugins/applecation/applecation.min.js)

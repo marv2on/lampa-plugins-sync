@@ -1,0 +1,7 @@
+dscinemawolf.js — плагін CinemaByWolf (v2.1.1) для Lampa. Додає фільтрацію контенту за стрімінговими мережами/телеканалами на сторінці фільму чи серіалу. Поділяє мережі на три групи:
+
+🇷🇺 RU — Start, Premier, KION, Okko, КиноПоиск, ИВИ, СТС, ТНТ тощо
+🌍 EN — Netflix, HBO, Hulu, Apple TV, Amazon Prime, NBC тощо
+🇺🇦 UA — 1+1, ICTV, СТБ
+
+Кожну групу можна окремо вмикати/вимикати у налаштуваннях. (https://igo8748.github.io/can-/dscinemawolf.js)

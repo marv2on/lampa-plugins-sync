@@ -1,0 +1,10 @@
+перероблено вирізано інформацію + подяка і змінено назву (lampa_cardify.js lampa_extended.js) оригінал (http://lampalampa.free.nf/ymod.js http://lampalampa.free.nf/ycardmod.js) Телеграм автора: t.me/Yaroslav_Films
+
+iptv.js — модифікована версія плагіну. Відносно оригіналу: видалено два порожніх методи-заглушки, домен береться з Lampa.Manifest.cubdomain, тексти UI дещо скорочені. (https://cub.red/plugin/iptv)
+Що робить плагін:
+Завантажує M3U-плейлисти (через CUB API або напряму)
+Відображає список каналів з групами та пошуком
+Показує EPG (телепрограму) через CUB API або кастомний XMLTV
+Підтримує catchup (архів) з різними типами: append, flussonic, xc, shift
+Зберігає вибране, заблоковані канали та параметри в IndexedDB
+Інтегрується з Lampa Player (HUD, перемикання каналів, таймлайн програми)

@@ -1,0 +1,14 @@
+season-fix.js Разбивает бесконечные первые сезоны аниме на нормальные части используя базу данных TVmaze. (https://ipavlin98.github.io/lmp-plugins/season-fix.js)
+
+cardify.js Немного исправленная версия Cardify с парой фиксов и отображением рейтингов. (https://ipavlin98.github.io/lmp-plugins/cardify.js)
+
+logo.js Логотипы вместо названий. Плавная загрузка, кеширование, настройки разрешения. (https://ipavlin98.github.io/lmp-plugins/logo.js)
+
+series-progress-fix.js Исправленное и более аккуратное отображение прогресса просмотра сериалов и фильмов на карточках. (https://ipavlin98.github.io/lmp-plugins/series-progress-fix.js)
+
+torr-styles.js Подсветка высоких сидов зелёным, высокого битрейта красным, зелёная рамка фокуса. (https://ipavlin98.github.io/lmp-plugins/torr-styles.js)
+
+ultimate-skip.js Пропуск опенингов и эндингов в аниме через базу Aniskip. Просмотреть или изменить информацию для конкретного аниме можно (https://ipavlin98.github.io/lmp-plugins/aniskip.html). А также пропуск интро и аутро для сериалов. Работает для большинства популярных тайтлов. (https://ipavlin98.github.io/lmp-series-skip-db/ultimate-skip.js) залежний від автора
+
+pip.js Картинка в картинке для Tizen и других систем. Дает возможность перемещаться по лампе не выходя из плеера. (https://ipavlin98.github.io/lmp-plugins/pip.js)
+
