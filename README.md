@@ -14,7 +14,7 @@ Mirror of Lampa plugins with auto-sync via GitHub Actions
 
 | Файл | Опис | Посилання |
 |------|------|-----------|
-| `themes.js` | Масштабний плагін тем (Prisma, Blue, Green, Orange, Pink, Red, Teal та ін.), кольорові бейджі якості (4K/WEB-DL/BD тощо) з градієнтами для всіх тем | [↗](https://arst113.github.io/log/themes.js) |
+| `themes.js` | Масштабний плагін тем (Prisma, Blue, Green, Orange, Pink, Red, Teal та ін.), кольорові бейджі якості (4K/WEB-DL/BD тощо) з градієнтами для всіх тем | — |
 | `NewPhoneMenu.js` | Нижня навігаційна панель для мобільної Lampa у стилі glassmorphism. До 3 кнопок з іконкою та підписом, blur-ефект | [↗](https://arst113.github.io/log/NewPhoneMenu.js) |
 | `NewMenu.js` | Переносить пункти бокового меню у верхню шапку у вигляді іконок. Розмір іконок та видимість пунктів налаштовуються | [↗](https://arst113.github.io/log/NewMenu.js) |
 
