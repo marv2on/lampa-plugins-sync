@@ -1,5 +1,6 @@
 # lampa-plugins-sync
 Mirror of Lampa plugins with auto-sync via GitHub Actions
+
 # 📦 Каталог плагінів для Lampa
 
 > Зібрано вручну. Кожен плагін протестований. Опис відповідає вмісту файлу.
@@ -113,11 +114,23 @@ Mirror of Lampa plugins with auto-sync via GitHub Actions
 
 ---
 
+### hanzo — [@hanzo109](https://t.me/hanzo109)
+
+| Файл | Опис | Посилання |
+|------|------|-----------|
+| `parser-selector.js` | Перемикач парсерів (Jackett/JacRed) прямо у вікні торрентів. Кнопка між «Пошук» і «Сортування», список парсерів налаштовується. При зміні — одразу перезавантажує список | — |
+
+---
+
 ### hlushok.github.io — [@Hlushok](https://t.me/Hlushok)
 
 | Файл | Опис | Посилання |
 |------|------|-----------|
 | `redirect.js` | Вибір сервера через dropdown (Lampa UA / Go Lampa UA / Lampa MX), перевірка повторного редиректу, затримка 3 сек зі скасуванням | [↗](https://hlushok.github.io/lampa-plugin/redirect.js) |
+| `applecation.js` v1.2.1 | Картка фільму/серіалу в стилі Apple TV: логотип, мета-інфо, бейджі якості (4K/HDR/DV/звук/дубляж), ефект «рідкого скла», вбудовані рейтинги. Тільки TV-режим | [↗](http://lampaua.mooo.com/applecation.js) |
+| `buttons.js` v1.1.1 | Менеджер кнопок: порядок, приховування, папки, кастомні іконки (SVG), кольори, назви, режими відображення. ES5 + поліфіли | [↗](http://lampaua.mooo.com/buttons.js) |
+| `likhtar.js` v3.0 | Кастомна головна сторінка: hero-слайдер, стрімінги, «Кіно під настрій», UA-стрічка, Кіноогляд (YouTube), підписки на студії, бейджі якості/UA | [↗](http://lampaua.mooo.com/likhtar.js) |
+| `ymain.js` v8 | Кастомна головна з українськими джерелами: 9 налаштовуваних рядків, backdrop-картки 16:9 з логотипом, прапорець 🇺🇦, бейдж сезону/прогресу. Lite mode для слабких пристроїв | [↗](http://lampaua.mooo.com/ymain.js) |
 
 ---
 
@@ -281,6 +294,14 @@ Mirror of Lampa plugins with auto-sync via GitHub Actions
 
 ---
 
+### This is the way. — автор невідомий
+
+| Файл | Опис | Посилання |
+|------|------|-----------|
+| `you_see.js` | «Переглянуто» — пункт у бічному меню з останніми 50 переглянутими. На головній (app_digital ≥ 300) додає ряд з останніми 20 переглянутими | [↗](https://ne3nayskas.github.io/plugins/you_see.js) |
+
+---
+
 ### tvigl.github.io — автор невідомий
 
 | Файл | Опис | Посилання |
@@ -294,6 +315,14 @@ Mirror of Lampa plugins with auto-sync via GitHub Actions
 | Файл | Опис | Посилання |
 |------|------|-----------|
 | `sources.js` | Розділ «Джерела» в меню: Charts TMDB, Netflix/Prime/Disney+, TV США/Світ, 🇺🇦 Україна, 🇷🇺 Росія. Сортування за популярністю/рейтингом/датою | — |
+
+---
+
+### VaZ0NeZ — автор невідомий
+
+| Файл | Опис | Посилання |
+|------|------|-----------|
+| `rate.js` | Рейтинги в картках з налаштуваннями масштабу та розташування | [↗](https://amikdn.github.io/rate.js) |
 
 ---
 
