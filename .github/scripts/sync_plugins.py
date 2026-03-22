@@ -25,6 +25,7 @@ PLUGINS = [
     ("hlushok",       "buttons.js",             "http://lampaua.mooo.com/buttons.js"),
     ("hlushok",       "likhtar.js",             "http://lampaua.mooo.com/likhtar.js"),
     ("hlushok",       "ymain.js",               "http://lampaua.mooo.com/ymain.js"),
+    ("hlushok",       "ymain.js",               "http://lampaua.mooo.com/uacoments.js"),
     ("igo8748",       "dscinemawolf.js",        "https://igo8748.github.io/can-/dscinemawolf.js"),
     ("ipavlin98",     "season-fix.js",          "https://ipavlin98.github.io/lmp-plugins/season-fix.js"),
     ("ipavlin98",     "cardify.js",             "https://ipavlin98.github.io/lmp-plugins/cardify.js"),
