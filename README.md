@@ -272,7 +272,7 @@ Mirror of Lampa plugins with auto-sync via GitHub Actions
 
 | Файл | Опис | Посилання |
 |------|------|-----------|
-| `tv.js` | Самостійний IPTV без CUB-акаунту. M3U напряму, EPG через epg.rootu.top, catchup, вибране, цифрові клавіші пульта | — |
+| `tv.js` | Самостійний IPTV без CUB-акаунту. M3U напряму, EPG через epg.rootu.top, catchup, вибране, цифрові клавіші пульта | [↗]((https://plugin.rootu.top/tv.js)) |
 
 ---
 
