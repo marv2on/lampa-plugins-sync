@@ -5,15 +5,36 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+# не даём двум прогонам работать одновременно (иначе гонка при git push)
+concurrency:
+  group: sync-lampa-plugins
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+          submodules: false   # никаких submodule — только обычные файлы
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Сам скрипт никогда не завершается с ошибкой из-за упавшей ссылки —
+      # он ловит все сетевые проблемы сам и просто пропускает битый плагин.
+      # continue-on-error здесь — доп. страховка на случай непредвиденного краша.
       - name: Sync all plugins
+        continue-on-error: true
         run: python3 .github/scripts/sync_plugins.py
 
       - name: Commit changes
@@ -21,5 +42,22 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "sync: $(date +'%d.%m.%Y %H:%M')"
-          git push
+          if git diff --cached --quiet; then
+            echo "Нет изменений — коммит не нужен"
+          else
+            git commit -m "sync: $(date -u +'%d.%m.%Y %H:%M UTC')"
+          fi
+
+      - name: Push changes
+        run: |
+          # если параллельно кто-то запушил — просто подтягиваем и пробуем ещё раз,
+          # не роняем весь job из-за конфликта
+          for i in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "push не удался, попытка $i, обновляюсь и пробую снова..."
+            git pull --rebase --autostash
+          done
+          echo "::warning::push не удался после 3 попыток"
+          exit 0
