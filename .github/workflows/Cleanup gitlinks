@@ -1,0 +1,35 @@
+name: Cleanup broken gitlinks (one-time)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+          submodules: false
+
+      - name: Remove broken gitlink entries
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          # убираем только эти два "призрачных" указателя, реальные файлы не трогаем
+          git rm --cached -r --ignore-unmatch addonslmp "Игорь Пономарев/NUMParser"
+          rmdir addonslmp 2>/dev/null || true
+          rmdir "Игорь Пономарев/NUMParser" 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "Нечего чистить — записей уже нет"
+          else
+            git commit -m "fix: remove broken submodule references (addonslmp, NUMParser)"
+            git push
+          fi
